@@ -1,0 +1,54 @@
+body {
+    color: #434B4D;
+    font-family: 'Muli', sans-serif;
+    background-color: #F5F5F5;
+    padding-top:4rem;
+    
+}
+
+.item-container {
+    background-color:#FFFFFF;
+    padding: 20px 0px;
+    border-bottom:1px solid #75BBCD;
+}
+
+.item-container:only-child, .item-container:last-child {
+    border:0;
+}
+
+.container {
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+}
+
+.container h3 {
+    font-size: 26px;
+}
+
+.quantity i {
+    font-size: 18px;
+    line-height:60px;
+    color: #75BBCD;
+}
+
+.quantity-number {
+    font-size:40px;
+}
+
+.price {
+    color: #86969A;
+    font-size:18px;
+}
+
+.delete i{
+    font-size: 18px;
+    line-height:60px;
+    color: #ff293d;
+    line-height:60px;
+}
+
+.delete:hover, .quantity:hover {
+    cursor: pointer;
+}
