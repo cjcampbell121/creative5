@@ -32,12 +32,18 @@ router.get('/items/:item', function(req, res) {
   res.json(req.item);
 });
 
-/*
-router.put('/items/:item/upvote', function(req, res, next) {
-  req.item.upvote(function(err, item){
+router.delete('/items/:item', function(req, res) {
+  console.log("in Delete");
+  req.item.remove();
+  res.sendStatus(200);
+});
+
+router.put('/items/:item/quantity', function(req, res, next) {
+    console.log("in increase");
+    req.item.quantity(function(err, item){
     if (err) { return next(err); }
     res.json(item);
   });
 });
-*/
+
 module.exports = router;

@@ -33,7 +33,7 @@
     </form>
   </div>
   <div ng-repeat="item in items" class="row item-container">
-    <div class="col-md-1 col-1 delete text-center" ng-click="deleteItem(item)">
+    <div class="col-md-1 col-1 delete text-center" ng-click="delete(item)">
       <i class="fas fa-times-circle"></i>
     </div>
     <div class="col-md-8 col-5 ">
@@ -44,13 +44,13 @@
         <span class="price">{{item.price}}</span>
       </div>
     </div>
-    <div class="col-md-1 col-2 text-center quantity" ng-click=" decrementItem(item)">
+    <div class="col-md-1 col-2 text-center quantity" ng-click=" decreaseItem(item)">
       <i class="fas fa-minus-circle"></i>
     </div>
     <div class="col-md-1 col-2 text-center">
-      <span class="quantity-number">{{item.quantity}}</span>
+      <span class="quantity-number">{{item.quantitys}}</span>
     </div>
-    <div class="col-md-1 col-2 text-center quantity" ng-click="incrementItem(item)">
+    <div class="col-md-1 col-2 text-center quantity" ng-click="increaseItem(item)">
       <i class="fas fa-plus-circle"></i>
     </div>
   </div>
